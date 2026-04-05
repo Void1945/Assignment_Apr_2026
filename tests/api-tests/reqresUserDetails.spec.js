@@ -20,7 +20,6 @@ test('Creating new user record', async () => {
 
     const response = await apiContext.post('register', { data: { "email": `${testData.email}`, "password": `${testData.password}` } });
     console.log(response.status());
-    console.log(response);
     const body = await response.json();
     console.log(body);
     writeToTestData({ userId: body.id })
@@ -32,7 +31,6 @@ test('Validating newly created user details', async () => {
     const response = await apiContext.get(`users/${testData.userId}`);
 
     console.log(response.status());
-    console.log(response);
     const body = await response.json();
     console.log(body);
     expect(body.data.email).toBe(testData.email);
@@ -44,7 +42,6 @@ test('Validating newly created user details', async () => {
 test('Updating the user record', async () => {
     const response = await apiContext.put(`users/${testData.userId}`, { data: { "name": `${testData.updatedName}`, "job": `${testData.updatedJob}` } });
     console.log(response.status());
-    console.log(response);
     const body = await response.json();
     console.log(body);
     expect(body.name).toBe(testData.updatedName);

@@ -1,0 +1,73 @@
+200
+APIResponse: 200 OK
+  Date: Sun, 05 Apr 2026 15:35:19 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=14400, s-maxage=60
+  cdn-cache-control: max-age=60
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  etag: W/"301-x3WpM71sfLm7TYZ8F40iTnSIGu4"
+  Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+  Origin-Agent-Cluster: ?1
+  Ratelimit-Limit: 20
+  Ratelimit-Policy: 20;w=60
+  Ratelimit-Remaining: 19
+  Ratelimit-Reset: 60
+  Referrer-Policy: strict-origin-when-cross-origin
+  Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=e6b6JJo%2FKs2lQHYSvBLV69FQgZcD%2BPvzDkMM3H4QC3s%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775383113"}],"max_age":3600}
+  Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=e6b6JJo%2FKs2lQHYSvBLV69FQgZcD%2BPvzDkMM3H4QC3s%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775383113"
+  Server: cloudflare
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Via: 1.1 heroku-router
+  X-Content-Type-Options: nosniff
+  X-Dns-Prefetch-Control: off
+  X-Download-Options: noopen
+  X-Frame-Options: DENY
+  X-Permitted-Cross-Domain-Policies: none
+  X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+  X-Ratelimit-Limit: 250
+  X-Ratelimit-Remaining: 221
+  X-Ratelimit-Reset: 1775433600
+  X-Reqres-Docs: https://reqres.in
+  X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+  X-Reqres-Templates: https://app.reqres.in/templates
+  X-Reqres-Tip: Need more than /api/users? Build custom collections - app.reqres.in/dashboard
+  X-Reqres-Trial: true
+  X-Reqres-Trial-Days-Remaining: 14
+  X-Reqres-Trial-Expires: 2026-04-19T05:06:56.629Z
+  X-Reqres-Upgrade: https://app.reqres.in/upgrade
+  X-Request-Id: 57a45136-99ed-eae3-fb03-9f213caa10e9
+  X-Robots-Tag: noindex, nofollow
+  X-Xss-Protection: 0
+  cf-cache-status: REVALIDATED
+  Content-Encoding: br
+  CF-RAY: 9e799f37b8233977-MAA
+{
+  data: {
+    id: 4,
+    email: 'eve.holt@reqres.in',
+    first_name: 'Eve',
+    last_name: 'Holt',
+    avatar: 'https://reqres.in/img/faces/4-image.jpg'
+  },
+  support: {
+    url: 'https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral',
+    text: 'Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO.'
+  },
+  _meta: {
+    powered_by: 'ReqRes',
+    docs_url: 'https://app.reqres.in/documentation',
+    upgrade_url: 'https://app.reqres.in/upgrade',
+    example_url: 'https://app.reqres.in/examples/notes-app',
+    variant: 'v1_a',
+    message: 'Your data persists here. Add auth, logs, and custom schemas to build a real backend.',
+    cta: {
+      label: 'See example app',
+      url: 'https://app.reqres.in/examples/notes-app'
+    },
+    context: 'legacy_success'
+  }
+}

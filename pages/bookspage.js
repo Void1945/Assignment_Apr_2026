@@ -41,6 +41,7 @@ class BookPage {
     }
 
     async retrieveAndPrintBookDetails(searchText) {
+        await this.resultsTable.first().waitFor({ state: 'visible' });
         const tableContents = await this.resultsTable.all();
         //console.log(tableContents.length);
         for (const tablecontent of tableContents) {

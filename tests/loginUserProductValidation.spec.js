@@ -7,7 +7,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 const { HomePage } = require('../pages/homePage');
 const { BookPage } = require('../pages/bookspage');
 
-test('Verify the scenario where the search results in proper book list', async ({ page }) => {
+test('Login and retrieve book details from Book Store', async ({ page }) => {
     const bookPage = new BookPage(page);
     const homePage = new HomePage(page);
     await page.goto('/');
