@@ -10,7 +10,7 @@ const { BookPage } = require('../pages/bookspage');
 test('Verify the scenario where the search results in proper book list', async ({ page }) => {
     const bookPage = new BookPage(page);
     const homePage = new HomePage(page);
-    await page.goto(process.env.BASE_URL);
+    await page.goto('/');
     await homePage.clickOnBookStorebutton();
     await bookPage.login();
     await bookPage.enterUserName(process.env.APP_USERNAME);
